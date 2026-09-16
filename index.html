@@ -739,7 +739,7 @@
         return response.json().then(function(json){
           if(response.ok && json.success){
             form.reset();
-            status.textContent = "Got it — we'll reach out shortly to schedule your free survey.";
+            status.textContent = "Thank you - we will reach out shortly to schedule a site survey.";
           } else {
             status.textContent = json.message || "Something went wrong. Please call 618-816-5222 instead.";
             status.classList.add('error');
